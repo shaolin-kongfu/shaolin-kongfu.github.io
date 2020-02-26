@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="博客," />
 
 
 
@@ -86,14 +86,23 @@
 
 
 
+<meta name="description" content="为什么要搭建博客？笔者自动化出身，看着微信天天在推送python学习，想到自己学过C，于是决定看看python这玩意到底是不是大家吹的那么牛逼，学习是需要做笔记滴！  为什么不用word做笔记？ 使用word做笔记很不方便，需要建立多个文件 管理麻烦，分类归档不便，查找笔记耗时   用博客做笔记有以下优点： 可以快速的分类归档 开启博客评论功能还可以与他人交流经验 顺便学习一下前端的知识    如">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何优雅的搭建博客">
+<meta property="og:title" content="技术小白如何优雅的搭建博客">
 <meta property="og:url" content="http://yoursite.com/2020/02/25/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="笔记小站">
+<meta property="og:description" content="为什么要搭建博客？笔者自动化出身，看着微信天天在推送python学习，想到自己学过C，于是决定看看python这玩意到底是不是大家吹的那么牛逼，学习是需要做笔记滴！  为什么不用word做笔记？ 使用word做笔记很不方便，需要建立多个文件 管理麻烦，分类归档不便，查找笔记耗时   用博客做笔记有以下优点： 可以快速的分类归档 开启博客评论功能还可以与他人交流经验 顺便学习一下前端的知识    如">
+<meta property="og:image" content="http://yoursite.com/images/cnpm.jpg">
+<meta property="og:image" content="http://yoursite.com/images/hexo.JPG">
+<meta property="og:image" content="http://yoursite.com/images/hexos.jpg">
+<meta property="og:image" content="http://yoursite.com/images/deployer.jpg">
+<meta property="og:image" content="http://yoursite.com/images/clone.jpg">
 <meta property="article:published_time" content="2020-02-25T15:21:37.000Z">
-<meta property="article:modified_time" content="2020-02-25T15:32:17.710Z">
+<meta property="article:modified_time" content="2020-02-26T06:33:37.760Z">
 <meta property="article:author" content="少林功夫猴耶">
+<meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/cnpm.jpg">
 
 
 
@@ -129,7 +138,7 @@
 
 
 
-  <title>如何优雅的搭建博客 | 笔记小站</title>
+  <title>技术小白如何优雅的搭建博客 | 笔记小站</title>
   
 
 
@@ -273,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">如何优雅的搭建博客</h1>
+          <h1 class="post-title" itemprop="name headline">技术小白如何优雅的搭建博客</h1>
         
 
         <div class="post-meta">
@@ -295,6 +304,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -323,7 +354,58 @@
       
 
       
-        
+        <h1 id="为什么要搭建博客？"><a href="#为什么要搭建博客？" class="headerlink" title="为什么要搭建博客？"></a>为什么要搭建博客？</h1><p>笔者自动化出身，看着微信天天在推送python学习，想到自己学过C，于是决定看看python这玩意到底是不是大家吹的那么牛逼，学习是需要做<strong>笔记</strong>滴！</p>
+<ul>
+<li><strong>为什么不用word做笔记？</strong><ol>
+<li>使用word做笔记很不方便，需要建立多个文件</li>
+<li>管理麻烦，分类归档不便，查找笔记耗时</li>
+</ol>
+</li>
+<li><strong>用博客做笔记有以下优点：</strong><ol>
+<li>可以快速的分类归档</li>
+<li>开启博客评论功能还可以与他人交流经验</li>
+<li>顺便学习一下前端的知识</li>
+</ol>
+</li>
+</ul>
+<h1 id="如何选择博客框架？"><a href="#如何选择博客框架？" class="headerlink" title="如何选择博客框架？"></a>如何选择博客框架？</h1><p>目前博客可以分为两种：动态博客和静态博客。动态博客的建立需要服务器和数据库支持，功能很丰富，目前大多用WordPress搭建；静态博客建立简单，大多用hexo搭建，还可以将自己的笔记上传到github社区（一个神奇的程序员社区）上托管，随时随地查阅自己的笔记。</p>
+<p>静态博客功能比较单一，但是由于省资源，所以可以找到很多免费部署的资源。所以我选择hexo搭建自己的静态博客。</p>
+<h1 id="搭建博客的步骤？"><a href="#搭建博客的步骤？" class="headerlink" title="搭建博客的步骤？"></a>搭建博客的步骤？</h1><h2 id="1-前期准备："><a href="#1-前期准备：" class="headerlink" title="1. 前期准备："></a>1. 前期准备：</h2><p>  Github账号（托管上传文件）；<br>  Git安装（用于管理hexo的命令行窗口）；<br>  Node.js安装（hexo基于这种环境开发）</p>
+<ul>
+<li>申请github账号<br><a href="https://github.com" target="_blank" rel="noopener">官网点这里</a>，使用自己的邮箱注册一个账号</li>
+<li>安装Git<br><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git官网点这里</a>，在Git for Windows Setup目录下选择64位或32位安装，一路NEXT。</li>
+<li>生成git秘钥（理解为上传博客文件到github的密码吧）<br>这里我之前使用的是一键生成脚本，后来发现也不怎么简便吧，大家自己搭建，如果不懂可以参考下面这篇博客链接<br><a href="https://www.jianshu.com/p/220d04d2b20b" target="_blank" rel="noopener">请点这里</a><blockquote>
+<p>注意，your <a href="mailto:email@xxx.com">email@xxx.com</a>是指你注册github时使用的邮箱</p>
+</blockquote>
+</li>
+<li>复制秘钥到github社区（打开电脑文件夹，路径一般为C:\Users\xxx\ .ssh\id_rsa.pub），对id_rsa.pub文件使用文本文档打开，复制；<br>登陆github，在右上角点击自己的头像，点击settings，新页面左侧显示各种设置，点击SSH and GPG keys，点击绿色的new SSH key，title栏随便输，只要把id_rsa.pub的文字粘贴到key栏就行，点击绿色ADD SSH key按钮即可</li>
+</ul>
+<ul>
+<li>windows环境下安装Node.js<br><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node.js官网点这里</a>，我安装的是发布版，安装时一路点NEXT即可<blockquote>
+<p>注意：中间记得选择ADD TO PATH</p>
+</blockquote>
+<h2 id="2-搭建hexo博客"><a href="#2-搭建hexo博客" class="headerlink" title="2. 搭建hexo博客:"></a>2. 搭建hexo博客:</h2></li>
+<li>在电脑新建一个存放博客文件的文件夹，名字最好英文</li>
+<li>进入文件夹，右击选择Git Bash Here</li>
+<li>在显示的黑窗口里输入：<br><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code><br>（这是在安装淘宝镜像源，因为hexo框架是外国人写的，国内访问外网下载很卡，安装后速度变快）</li>
+<li>安装完成后继续输入：<code>cnpm -v</code><br>（这里是检查安装是否成功，如果成功，会显示版本号）<br><img src="/images/cnpm.jpg" alt=""></li>
+<li>继续输入：<code>cnpm install -g hexo-cli</code><br>（正式开始安装hexo框架，如果失败则再次输入）</li>
+<li>检测是否安装完成：<code>hexo -v</code><br>(成功则显示版本号)<br><img src="/images/hexo.JPG" alt=""></li>
+<li>输入：<code>hexo init</code><br>（初始化hexo）</li>
+<li>输入：<code>hexo s</code><br>(成功则显示如下)<br><img src="/images/hexos.jpg" alt=""></li>
+<li>在浏览器中输入<code>http://localhost:4000</code>可以预览自己搭建的博客，在git中按ctrl+C，结束预览，再次回到浏览器将无法访问。<h2 id="3-桥接到github社区："><a href="#3-桥接到github社区：" class="headerlink" title="3.桥接到github社区："></a>3.桥接到github社区：</h2></li>
+<li>登陆github社区,使用自己申请的github账号，然后在github中右上方点击自己的头像，再点击（ your repositories）,再点击NEW，新建一个自己的仓库存放博客文件命名格式为’你的账户名.github.io’（例：shaolin-kongfu.github.io）</li>
+<li>返回文件夹git窗口，输入：<code>cnpm install --save hexo-deployer-git</code><br>(这里是安装一个可以上传文件到github的插件，如果失败，可以多次执行代码)</li>
+<li>安装完成后，在文件夹里打开_config.yml文件（这是hexo的总配置文件，很多修改都在这里面）<blockquote>
+<p>注意！！！！千万不要用windows自带的文本格式打开，建议安装vscode,使用这个软件打开</p>
+</blockquote>
+</li>
+<li>在文件中找到下图代码，一般在最末尾（一开始是没有repo，branch的）：<br><img src="/images/deployer.jpg" alt=""></li>
+<li>对代码进行修改<br>type：写成git方便识别；<br>repo：仓库地址，在github仓库中，点击clone and download，选择use HTTPS（如下图），复制链接地址；<br><img src="/images/clone.jpg" alt=""><br>branch：设置为管理员master；</li>
+<li>保存文件，回到git命令行窗口，输入: <code>hexo d</code>,中途会要求你输入github用户名和密码，对应输入即可</li>
+<li>完成后在浏览器中输入（例：shaolin-kongfu.github.io），就可以看到自己的博客了</li>
+</ul>
+
       
     </div>
     
@@ -374,6 +456,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+          
+        </div>
       
 
       
@@ -444,8 +532,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -471,7 +568,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -507,6 +622,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么要搭建博客？"><span class="nav-number">1.</span> <span class="nav-text">为什么要搭建博客？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何选择博客框架？"><span class="nav-number">2.</span> <span class="nav-text">如何选择博客框架？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建博客的步骤？"><span class="nav-number">3.</span> <span class="nav-text">搭建博客的步骤？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-前期准备："><span class="nav-number">3.1.</span> <span class="nav-text">1. 前期准备：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-搭建hexo博客"><span class="nav-number">3.2.</span> <span class="nav-text">2. 搭建hexo博客:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-桥接到github社区："><span class="nav-number">3.3.</span> <span class="nav-text">3.桥接到github社区：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

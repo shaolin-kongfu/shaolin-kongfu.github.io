@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="博客," />
+  <meta name="keywords" content="计算机网络," />
 
 
 
@@ -86,23 +86,19 @@
 
 
 
-<meta name="description" content="为什么要搭建博客？笔者自动化出身，看着微信天天在推送python学习，想到自己学过C，于是决定看看python这玩意到底是不是大家吹的那么牛逼，学习是需要做笔记滴！  为什么不用word做笔记？ 使用word做笔记很不方便，需要建立多个文件 管理麻烦，分类归档不便，查找笔记耗时   用博客做笔记有以下优点： 可以快速的分类归档 开启博客评论功能还可以与他人交流经验 顺便学习一下前端的知识">
+<meta name="description" content="故事背景：某医院早年开发有一个局域网，用于管理患者信息，假设医院IP段为172.16.x.x；若干年后医保普及，需要联网，但是医保的IP段为168.168.201.x；应该如何设置才能使医院能访问医保系统？  更换IP这是一种办法，但是如果医院之前建立网络的时候，管理员太辣鸡，没有采用分层模型，内部的DNS服务器里的数据库（与应用层相关）绑定了IP，而不是域名，修改IP将会导致医院本身局域网崩溃，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="技术小白如何优雅的搭建博客">
-<meta property="og:url" content="http://yoursite.com/2020/02/25/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="OSI分层模型的意义">
+<meta property="og:url" content="http://yoursite.com/2020/03/06/OSI%E5%88%86%E5%B1%82%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%84%8F%E4%B9%89/index.html">
 <meta property="og:site_name" content="笔记小站">
-<meta property="og:description" content="为什么要搭建博客？笔者自动化出身，看着微信天天在推送python学习，想到自己学过C，于是决定看看python这玩意到底是不是大家吹的那么牛逼，学习是需要做笔记滴！  为什么不用word做笔记？ 使用word做笔记很不方便，需要建立多个文件 管理麻烦，分类归档不便，查找笔记耗时   用博客做笔记有以下优点： 可以快速的分类归档 开启博客评论功能还可以与他人交流经验 顺便学习一下前端的知识">
-<meta property="og:image" content="http://yoursite.com/images/cnpm.jpg">
-<meta property="og:image" content="http://yoursite.com/images/hexo.JPG">
-<meta property="og:image" content="http://yoursite.com/images/hexos.jpg">
-<meta property="og:image" content="http://yoursite.com/images/deployer.jpg">
-<meta property="og:image" content="http://yoursite.com/images/clone.jpg">
-<meta property="article:published_time" content="2020-02-25T15:21:37.000Z">
-<meta property="article:modified_time" content="2020-02-26T10:50:16.874Z">
+<meta property="og:description" content="故事背景：某医院早年开发有一个局域网，用于管理患者信息，假设医院IP段为172.16.x.x；若干年后医保普及，需要联网，但是医保的IP段为168.168.201.x；应该如何设置才能使医院能访问医保系统？  更换IP这是一种办法，但是如果医院之前建立网络的时候，管理员太辣鸡，没有采用分层模型，内部的DNS服务器里的数据库（与应用层相关）绑定了IP，而不是域名，修改IP将会导致医院本身局域网崩溃，">
+<meta property="og:image" content="http://shaolin-kongfu.gitee.io/photo/%E5%88%86%E5%B1%82%E6%A1%88%E4%BE%8B1%EF%BC%88%E5%8C%BB%E9%99%A2%EF%BC%89.JPG">
+<meta property="article:published_time" content="2020-03-06T12:29:02.000Z">
+<meta property="article:modified_time" content="2020-03-06T13:41:25.944Z">
 <meta property="article:author" content="少林功夫猴耶">
-<meta property="article:tag" content="博客">
+<meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/cnpm.jpg">
+<meta name="twitter:image" content="http://shaolin-kongfu.gitee.io/photo/%E5%88%86%E5%B1%82%E6%A1%88%E4%BE%8B1%EF%BC%88%E5%8C%BB%E9%99%A2%EF%BC%89.JPG">
 
 
 
@@ -132,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/02/25/如何优雅的搭建博客/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/03/06/OSI分层模型的意义/"/>
 
 
 
 
 
-  <title>技术小白如何优雅的搭建博客 | 笔记小站</title>
+  <title>OSI分层模型的意义 | 笔记小站</title>
   
 
 
@@ -265,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/25/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/06/OSI%E5%88%86%E5%B1%82%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%84%8F%E4%B9%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="少林功夫猴耶">
@@ -282,7 +278,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">技术小白如何优雅的搭建博客</h1>
+          <h1 class="post-title" itemprop="name headline">OSI分层模型的意义</h1>
         
 
         <div class="post-meta">
@@ -294,8 +290,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-25T23:21:37+08:00">
-                2020-02-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-06T20:29:02+08:00">
+                2020-03-06
               </time>
             
 
@@ -317,8 +313,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机网络</span>
                   </a>
                 </span>
 
@@ -335,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/02/25/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2020/02/25/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" itemprop="commentsCount"></span>
+                <a href="/2020/03/06/OSI%E5%88%86%E5%B1%82%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%84%8F%E4%B9%89/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2020/03/06/OSI%E5%88%86%E5%B1%82%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%84%8F%E4%B9%89/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -364,88 +360,35 @@
       
 
       
-        <h1 id="为什么要搭建博客？"><a href="#为什么要搭建博客？" class="headerlink" title="为什么要搭建博客？"></a>为什么要搭建博客？</h1><p>笔者自动化出身，看着微信天天在推送python学习，想到自己学过C，于是决定看看python这玩意到底是不是大家吹的那么牛逼，学习是需要做<strong>笔记</strong>滴！</p>
-<ul>
-<li><strong>为什么不用word做笔记？</strong><ol>
-<li>使用word做笔记很不方便，需要建立多个文件</li>
-<li>管理麻烦，分类归档不便，查找笔记耗时</li>
+        <h1 id="故事背景："><a href="#故事背景：" class="headerlink" title="故事背景："></a>故事背景：</h1><p>某医院早年开发有一个局域网，用于管理患者信息，假设医院IP段为172.16.x.x；若干年后医保普及，需要联网，但是医保的IP段为168.168.201.x；应该如何设置才能使医院能访问医保系统？</p>
+<ol>
+<li>更换IP<br>这是一种办法，但是如果医院之前建立网络的时候，管理员太辣鸡，没有采用分层模型，内部的DNS服务器里的数据库（与应用层相关）绑定了IP，而不是域名，修改IP将会导致医院本身局域网崩溃，很不幸的是，这家医院就是这种情况，那应该怎么办呢</li>
+<li>增加IP<br>为医院的电脑设置双IP，访问医保中心时使用医保中心的网段，访问内部网络时，使用原来的IP网段<br><img src="http://shaolin-kongfu.gitee.io/photo/%E5%88%86%E5%B1%82%E6%A1%88%E4%BE%8B1%EF%BC%88%E5%8C%BB%E9%99%A2%EF%BC%89.JPG" alt="数据传输过程"></li>
 </ol>
-</li>
-<li><strong>用博客做笔记有以下优点：</strong><ol>
-<li>可以快速的分类归档</li>
-<li>开启博客评论功能还可以与他人交流经验</li>
-<li>顺便学习一下前端的知识</li>
+<h1 id="OSI参考模型对网络排错的意义："><a href="#OSI参考模型对网络排错的意义：" class="headerlink" title="OSI参考模型对网络排错的意义："></a>OSI参考模型对网络排错的意义：</h1><p>每一层都为上一层提供服务，一旦某一层崩了，上面所有层都崩了，所以排查问题从最底层(物理层)排查；</p>
+<ol>
+<li>物理层故障<br>查看网络链接状态，发送和接收的数据包数值；</li>
+<li>数据链路层故障</li>
 </ol>
-</li>
-</ul>
-<hr>
-<h1 id="如何选择博客框架？"><a href="#如何选择博客框架？" class="headerlink" title="如何选择博客框架？"></a>如何选择博客框架？</h1><p>目前博客可以分为两种：动态博客和静态博客。动态博客的建立需要服务器和数据库支持，功能很丰富，目前大多用WordPress搭建；静态博客建立简单，大多用hexo搭建，还可以将自己的笔记上传到github社区（一个神奇的程序员社区）上托管，随时随地查阅自己的笔记。</p>
-<p>静态博客功能比较单一，但是由于省资源，所以可以找到很多免费部署的资源。所以我选择hexo搭建自己的静态博客。</p>
-<hr>
-<h1 id="搭建博客的步骤？"><a href="#搭建博客的步骤？" class="headerlink" title="搭建博客的步骤？"></a>搭建博客的步骤？</h1><h2 id="1-前期准备："><a href="#1-前期准备：" class="headerlink" title="1. 前期准备："></a>1. 前期准备：</h2><p>  Github账号（托管上传文件）；<br>  Git安装（用于管理hexo的命令行窗口）；<br>  Node.js安装（hexo基于这种环境开发）</p>
 <ul>
-<li>申请github账号<br><a href="https://github.com" target="_blank" rel="noopener">官网点这里</a>，使用自己的邮箱注册一个账号</li>
-<li>安装Git<br><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git官网点这里</a>，在Git for Windows Setup目录下选择64位或32位安装，一路NEXT。</li>
-<li>生成git秘钥（理解为上传博客文件到github的密码吧）<br>这里我之前使用的是一键生成脚本，后来发现也不怎么简便吧，大家自己搭建，如果不懂可以参考下面这篇博客链接<br><a href="https://www.jianshu.com/p/220d04d2b20b" target="_blank" rel="noopener">请点这里</a><blockquote>
-<p>注意，your <a href="mailto:email@xxx.com">email@xxx.com</a>是指你注册github时使用的邮箱</p>
+<li>同一个网段内某一台计算机无法上网，物理层排除，有可能Mac地址冲突，2个一样的Mac地址同时访问；</li>
+<li>欠费哈哈哈哈；</li>
+<li>两端的接口网速没有协商一致（比如100M和1000M）；</li>
+<li>计算机连接到其它VLAN(虚拟互联网)中。（存疑！！！）</li>
+</ul>
+<ol start="3">
+<li>网络层故障</li>
+</ol>
+<ul>
+<li>配置错误的IP地址，子网掩码，网关（决定出口访问其他网段的路径）；</li>
+<li>路由器没有配置到达的目标网络的路由；</li>
+</ul>
+<ol start="4">
+<li>应用层(合并3层)故障<blockquote>
+<p>存疑点：啥是VLAN？为啥排故没有传输层（TCP/IP）</p>
 </blockquote>
 </li>
-<li>复制秘钥到github社区（打开电脑文件夹，路径一般为C:\Users\xxx\ .ssh\id_rsa.pub），对id_rsa.pub文件使用文本文档打开，复制；<br>登陆github，在右上角点击自己的头像，点击settings，新页面左侧显示各种设置，点击SSH and GPG keys，点击绿色的new SSH key，title栏随便输，只要把id_rsa.pub的文字粘贴到key栏就行，点击绿色ADD SSH key按钮即可</li>
-</ul>
-<ul>
-<li>windows环境下安装Node.js<br><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node.js官网点这里</a>，我安装的是发布版，安装时一路点NEXT即可<blockquote>
-<p>注意：中间记得选择ADD TO PATH</p>
-</blockquote>
-</li>
-</ul>
-<hr>
-<h2 id="2-搭建hexo博客"><a href="#2-搭建hexo博客" class="headerlink" title="2. 搭建hexo博客:"></a>2. 搭建hexo博客:</h2><ul>
-<li><p>在电脑新建一个存放博客文件的文件夹，名字最好英文</p>
-</li>
-<li><p>进入文件夹，右击选择Git Bash Here</p>
-</li>
-<li><p>在显示的黑窗口里输入：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>（这是在安装淘宝镜像源，因为hexo框架是外国人写的，国内访问外网下载很卡，安装后速度变快）</p>
-</li>
-<li><p>安装完成后继续输入：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
-<p>（这里是检查安装是否成功，如果成功，会显示版本号）<br><img src="/images/cnpm.jpg" alt=""></p>
-</li>
-<li><p>继续输入：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>（正式开始安装hexo框架，如果失败则再次输入）</p>
-</li>
-<li><p>检测是否安装完成：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-<p>(成功则显示版本号)<br><img src="/images/hexo.JPG" alt=""></p>
-</li>
-<li><p>输入：<br><code>hexo init</code><br>初始化hexo</p>
-</li>
-<li><p>输入：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p>(成功则显示如下)<br><img src="/images/hexos.jpg" alt=""></p>
-<ul>
-<li>在浏览器中输入<code>http://localhost:4000</code>可以预览自己搭建的博客，在git中按ctrl+C，结束预览，再次回到浏览器将无法访问。</li>
-</ul>
-<hr>
-<h2 id="3-桥接到github社区："><a href="#3-桥接到github社区：" class="headerlink" title="3.桥接到github社区："></a>3.桥接到github社区：</h2><ul>
-<li>登陆github社区,使用自己申请的github账号，然后在github中右上方点击自己的头像，再点击（ your repositories）,再点击NEW，新建一个自己的仓库存放博客文件命名格式为’你的账户名.github.io’（例：shaolin-kongfu.github.io）</li>
-<li>返回文件夹git窗口，输入：<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-(这里是安装一个可以上传文件到github的插件，如果失败，可以多次执行代码)</li>
-<li>安装完成后，在文件夹里打开_config.yml文件（这是hexo的总配置文件，很多修改都在这里面）<blockquote>
-<p>注意！！！！千万不要用windows自带的文本格式打开，建议安装vscode,使用这个软件打开</p>
-</blockquote>
-</li>
-<li>在文件中找到下图代码，一般在最末尾（一开始是没有repo，branch的）：<br><img src="/images/deployer.jpg" alt=""></li>
-<li>对代码进行修改<br>type：写成git方便识别；<br>repo：仓库地址，在github仓库中，点击clone and download，选择use HTTPS（如下图），复制链接地址；<br><img src="/images/clone.jpg" alt=""><br>branch：设置为管理员master；</li>
-<li>保存文件，回到git命令行窗口，输入:<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-中途会要求你输入github用户名和密码，对应输入即可</li>
-<li>完成后在浏览器中输入（例：shaolin-kongfu.github.io），就可以看到自己的博客了</li>
-</ul>
+</ol>
 
       
     </div>
@@ -500,7 +443,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag"># 计算机网络</a>
           
         </div>
       
@@ -513,8 +456,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/25/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2020/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0/" rel="next" title="计算机网络概述">
+                <i class="fa fa-chevron-left"></i> 计算机网络概述
               </a>
             
           </div>
@@ -522,10 +465,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/26/%E4%B8%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/" rel="prev" title="为我的博客更换主题">
-                为我的博客更换主题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -684,7 +623,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么要搭建博客？"><span class="nav-number">1.</span> <span class="nav-text">为什么要搭建博客？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何选择博客框架？"><span class="nav-number">2.</span> <span class="nav-text">如何选择博客框架？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建博客的步骤？"><span class="nav-number">3.</span> <span class="nav-text">搭建博客的步骤？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-前期准备："><span class="nav-number">3.1.</span> <span class="nav-text">1. 前期准备：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-搭建hexo博客"><span class="nav-number">3.2.</span> <span class="nav-text">2. 搭建hexo博客:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-桥接到github社区："><span class="nav-number">3.3.</span> <span class="nav-text">3.桥接到github社区：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#故事背景："><span class="nav-number">1.</span> <span class="nav-text">故事背景：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OSI参考模型对网络排错的意义："><span class="nav-number">2.</span> <span class="nav-text">OSI参考模型对网络排错的意义：</span></a></li></ol></div>
             
 
           </div>
